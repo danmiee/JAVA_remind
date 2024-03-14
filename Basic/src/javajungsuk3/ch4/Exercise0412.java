@@ -8,8 +8,11 @@ public class Exercise0412 {
         // i%3==0 || i%3==2일 때, 탭하고 i++
         int i=2;
         int j=1;
-        while(i<=9 && j<=3) {
-            if(i%3==0 || i%3==2) {
+        while (i<=9 && j<=3) {
+            if (i==9) {
+                System.out.printf("%d*%d=%d\n", i, j, i*j);
+                i--; j++;
+            } else if (i%3==0 || i%3==2) {
                 System.out.printf("%d*%d=%d\t", i, j, i*j);
                 i++;
             } else if (j<3) {
