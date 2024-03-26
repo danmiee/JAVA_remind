@@ -24,8 +24,9 @@ public class Exercise0509 {
         for (int i = 0; i < star.length; i++) {
             for (int j = 0; j < star[i].length; j++) {
                 /* (1) 알맞은 코드를 넣어 완성하시오. */
-//                result[j][i] = star[i][j];
-                result[star.length-j][i] = star[i][j];  // 반시계방향
+                result[j][star.length-i-1] = star[i][j];
+//                result[j][i] = star[i][j];  // 180도
+//                result[star[0].length-j-1][i] = star[i][j];  // 반시계방향
             }
         }
 
